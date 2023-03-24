@@ -55,7 +55,7 @@ public class Employe {
         this.setAdresse(adresse);
     }
 
-    public ArrayList<String> getMethodAnnote(){
+    public ArrayList<String> getMethodAnnotee(){
         ArrayList<String> tabmaethod = new ArrayList<String>();
         Method[] methods = this.getClass().getDeclaredMethods();
         for (Method method : methods) {
