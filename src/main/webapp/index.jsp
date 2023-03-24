@@ -7,7 +7,7 @@
 <body>
 <h1>Menu</h1>
 <br/>
-<p><a href="${pageContext.request.contextPath}/front">Liste</a></p>
-<p><a href="${pageContext.request.contextPath}/front">Insertion</a></p>
+<p><a href="${pageContext.request.contextPath}/FrontServlet">Liste</a></p>
+<p><a href="${pageContext.request.contextPath}/FrontServlet">Insertion</a></p>
 </body>
 </html>

@@ -12,12 +12,14 @@ public class FrontServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             PrintWriter out = response.getWriter();
+            String requestUrl = request.getRequestURL().toString();
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Ma Servlet</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Bienvenue sur ma Servlet!</h1>");
+            out.println("<p>URL de la requete: " + requestUrl + "</p>");
             out.println("</body>");
             out.println("</html>");
 
