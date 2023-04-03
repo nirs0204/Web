@@ -16,7 +16,6 @@ public class FrontServlet extends HttpServlet {
         try {
             PrintWriter out = response.getWriter();
             String requestUrl = request.getRequestURL().toString();
-
             this.insertHashMap("etu2061.framework.bdd");
             out.println("<html>");
             out.println("<head>");

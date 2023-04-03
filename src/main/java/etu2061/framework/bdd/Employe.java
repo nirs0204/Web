@@ -13,7 +13,7 @@ public class Employe {
     String email;
     String adresse;
 
-    @UrlAnnotation(url = "getnom")
+    @UrlAnnotation(url = "get_nom")
     public String getNom() {
         return nom;
     }
