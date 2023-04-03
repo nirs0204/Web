@@ -13,7 +13,7 @@ public class Employe {
     String email;
     String adresse;
 
-    @UrlAnnotation(url = "/huhu/get")
+    @UrlAnnotation(url = "get_nom")
     public String getNom() {
         return nom;
     }
@@ -53,20 +53,5 @@ public class Employe {
         this.setAge(age);
         this.setEmail(email);
         this.setAdresse(adresse);
-    }
-
-    public ArrayList<String> getMethodAnnotee(){
-        ArrayList<String> tabmaethod = new ArrayList<String>();
-        Method[] methods = this.getClass().getDeclaredMethods();
-        for (Method method : methods) {
-            Annotation[] annotations = method.getAnnotations();
-            for (Annotation annotation : annotations) {
-                if (annotation instanceof UrlAnnotation) {
-                    tabmaethod.add(method.getName());
-                    System.out.println("Method " + method.getName() + " is annotated with " + annotation.annotationType().getSimpleName());
-                }
-            }
-        }
-        return tabmaethod;
     }
 }
